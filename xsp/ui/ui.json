@@ -1,0 +1,122 @@
+{
+   "style" : "default",
+   "config" : "save_shabake.dat",
+   "width" : 800,
+   "height" : 500,
+   "cancelname" : "取消",
+   "okname" : "确定",
+   "views" : [
+      {
+         "text" : "动作选择",
+         "type" : "Page",
+         "views" : [
+            {
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : "30",
+               "text" : "说明",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : "20",
+               "text" : "1、开启助手后尽量不要做其它人为操作；",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : "20",
+               "text" : "2、自动任务暂时支持比奇、军需、环任务，其它类型任务可能会出现问题；",
+               "type" : "Label"
+            },
+            {
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : "20",
+               "text" : "3、选择挂机时先把角色放在要挂机的地图中；",
+               "type" : "Label"
+            },
+            {
+               "id" : "actionRadio",
+               "list" : "自动任务,野外挂机,自动喊话",
+               "select" : "0",
+               "size" : "30",
+               "type" : "RadioGroup",
+               "orientation" : "horizontal"
+            }
+         ]
+      },
+      {
+         "text" : "基本设置",
+         "type" : "Page",
+         "views" : [
+            {
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : "20",
+               "text" : "任务设置",
+               "type" : "Label"
+            },
+            {
+               "id" : "taskSetting",
+               "list" : "使用飞鞋,原地复活",
+               "select" : "0@1",
+               "size" : "30",
+               "type" : "CheckBoxGroup",
+               "orientation" : "horizontal"
+            },
+            {
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : "20",
+               "text" : "喊话类型",
+               "type" : "Label"
+            },
+            {
+               "id" : "shoutMode",
+               "list" : "世界,行会,组队,附近",
+               "select" : "0",
+               "size" : "30",
+               "type" : "RadioGroup",
+               "orientation" : "horizontal"
+            },
+            {
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : "20",
+               "text" : "喊话内容",
+               "type" : "Label"
+            },
+            {
+               "id" : "shoutText",
+               "align" : "top",
+               "color" : "0,0,0",
+               "kbtype" : "number",
+               "prompt" : "输入喊话内容",
+               "size" : "25",
+               "text" : "",
+               "type" : "Edit"
+            },
+            {
+               "align" : "left",
+               "color" : "0,0,0",
+               "size" : "20",
+               "text" : "喊话间隔（分钟）",
+               "type" : "Label"
+            },
+            {
+               "id" : "shoutInterval",
+               "align" : "left",
+               "color" : "0,0,0",
+               "kbtype" : "number",
+               "prompt" : "输入喊话间隔",
+               "size" : "25",
+               "text" : "1",
+               "type" : "Edit"
+            }
+         ]
+      }
+   ]
+}
